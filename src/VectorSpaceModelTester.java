@@ -9,26 +9,33 @@ public class VectorSpaceModelTester {
 
 	public static void main(String[] args) {
 		
-		Document query = new Document("query.txt");
+		Document query = new Document("english-book.txt");
 //		Document hpcs = new Document("hp-cs.txt");
 //		Document hpdh = new Document("hp-dh.txt");
 //		Document gray = new Document("50-shades.txt");
-		Document d1 = new Document("alice-in-wonderland.txt");
-		Document d2 = new Document("huck-finn.txt");
-		Document d3 = new Document("les-mis.txt");
-		Document d4 = new Document("tom-sawyer.txt");
-		Document d5 = new Document("pride-prejudice.txt");
-		
+//		Document d1 = new Document("alice-in-wonderland.txt");
+//		Document d2 = new Document("huck-finn.txt");
+//		Document d3 = new Document("les-mis.txt");
+//		Document d4 = new Document("tom-sawyer.txt");
+//		Document d5 = new Document("pride-prejudice.txt");
+
+		/**
+		 * My documents
+		 */
+
+		Document dutchDoc = new Document("dutch.txt");
+		Document finnishDoc = new Document("finnish.txt");
+		Document frenchDoc = new Document ("french.txt");
+
 		ArrayList<Document> documents = new ArrayList<Document>();
 		documents.add(query);
 //		documents.add(hpcs);
 //		documents.add(hpdh);
 //		documents.add(gray);
-		documents.add(d1);
-		documents.add(d2);
-		documents.add(d3);
-		documents.add(d4);
-		documents.add(d5);
+
+		documents.add(dutchDoc);
+		documents.add(finnishDoc);
+		documents.add(frenchDoc);
 		
 		Corpus corpus = new Corpus(documents);
 		
